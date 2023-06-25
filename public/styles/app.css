@@ -651,6 +651,18 @@ body{
   height: 100%;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .w-30 {
   width: 7.5rem;
 }
@@ -693,6 +705,18 @@ body{
 
 .w-\[98\%\] {
   width: 98%;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[100\] {
+  width: 100;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .shrink-0 {
@@ -866,6 +890,11 @@ body{
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-1 {
@@ -1073,6 +1102,10 @@ body{
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 }
 
