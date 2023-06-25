@@ -41,18 +41,23 @@
 
 
 
-<header class="fixed top-9 right-0 left-0 flex items-center w-[90%] px-10 py-5 h-24 rounded-3xl mx-auto bg-black/50 backdrop-blur-[6px">
+<header class="fixed top-9 right-0 left-0 hidden md:flex items-center w-[98%] lg:w-[90%] px-5 lg:px-10 py-5 h-24 rounded-3xl mx-auto bg-black/50 backdrop-blur-[6px">
 
     <div class="flex items-center justify-between w-full">
         
+        <!-- logo&menu -->
 
-        <nav class="flex items-center gap-x-9 h-14">
+        <nav class="flex items-center gap-x-6 lg:gap-x-9 h-14">
 
-            <div>
+            <!-- logo -->
+
+            <div class="shrink-0">
                 <img src="./img/app-logo.png" alt="golden coffee">
             </div>
+            
+            <!-- menue -->
 
-            <ul class="flex items-center gap-x-9 text-xl text-gray-300 tracking-tightset h-full child:leading-[56px]">
+            <ul class="flex items-center gap-x-5 lg:gap-x-9 text-xl text-gray-300 tracking-tightset h-full child:leading-[56px]">
                 <li class="font-danaMedium text-orange-200"><a href="">صفحه اصلی</a></li>
                 <li class="relative group">
                     <a href="" class="group-hover:text-orange-300 group-hover:transition-colors">فروشگاه</a>
@@ -75,10 +80,11 @@
         </nav>
 
 
+        <!-- shop&login cart -->
 
-        <div class="flex gap-x-10 text-orange-200 text-xl">
+        <div class="flex gap-x-4 lg:gap-x-5 xl:gap-x-10 text-orange-200 text-xl">
 
-            <div class="flex items-center gap-x-5">
+            <div class="flex items-center gap-x-4 lg:gap-x-5">
 
                 <div class="relative group">
                     <!-- shoping cart -->
@@ -179,7 +185,7 @@
                 <svg class="w-8 h-8 rotate-180">
                     <use xlink:href="#arrow-left-on-rectangle"></use>
                 </svg>
-                <span>ورود  |  ثبت‌نام</span>
+                <span class="hidden xl:inline-block">ورود  |  ثبت‌نام</span>
             </a>
 
         </div>
