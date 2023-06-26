@@ -643,8 +643,16 @@ body{
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .hidden {
@@ -764,12 +772,20 @@ body{
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-x-2 {
@@ -805,6 +821,10 @@ body{
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
 }
 
 .space-y-\[16px\] > :not([hidden]) ~ :not([hidden]) {
@@ -1138,6 +1158,14 @@ body{
 
 :is(.dark .dark\:flex) {
   display: flex;
+}
+
+ {
+  display: flex;
+}
+
+:is(.dark .dark\:inline-flex) {
+  display: inline-flex;
 }
 
 :is(.dark .dark\:hidden) {

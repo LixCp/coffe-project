@@ -194,7 +194,7 @@
                     
                 </div>
                 <!-- darkmode and lightmode -->
-                <div class="cursor-pointer transition-all" id="toggle-theme">
+                <div class="toggle-theme cursor-pointer transition-all">
                     <svg class="w-8 h-8 inline-block dark:hidden">
                         <use xlink:href="#moon"></use>
                     </svg>
@@ -235,7 +235,7 @@
             <use href="#bars-3"></use>
         </svg>
     </div>
-    
+
     <div class="fixed top-0 right-0 bottom-0 min-h-screen pt-3 px-4 w-64 bg-white dark:bg-zinc-700 z-20">
         <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
             <div class="flex gap-x-3.5">
@@ -250,31 +250,33 @@
                 <use href="#x-mark"></use>
             </svg>
         </div>
-        <div class="px-2.5 space-y-6 text-orange-300 pt-8 mt-8 border-t border-t-gray-100 dark:border-t-white/10">
 
-            <a href="#" class="flex items-center gap-x-2">
+        <div class="flex flex-col items-start gap-y-6 px-2.5 text-orange-300 pt-8 mt-8 border-t border-t-gray-100 dark:border-t-white/10">
+
+            <a href="#" class="inline-flex items-center gap-x-2">
                 <svg class="w-5 h-5 rotate-180">
                     <use xlink:href="#arrow-left-on-rectangle"></use>
                 </svg>
                 ورود  |  ثبت‌نام
             </a>
 
-            <div class="flex items-center gap-x-2 dark:hidden">
-                <svg class="w-5 h-5">
-                    <use href="#moon"></use>
-                </svg>
-                <span>تم تیره</span>
+            <div class="toggle-theme inline-flex">
+                <div class="flex items-center gap-x-2 dark:hidden">
+                    <svg class="w-5 h-5">
+                        <use href="#moon"></use>
+                    </svg>
+                    <span>تم تیره</span>
+                </div>
+                <div class="hidden dark:flex items-center gap-x-2">
+                    <svg class="w-5 h-5">
+                        <use href="#sun"></use>
+                    </svg>
+                    <span>تم روشن</span>
+    
+                </div>
             </div>
 
-            <div class="hidden dark:flex items-center gap-x-2">
-                <svg class="w-5 h-5">
-                    <use href="#sun"></use>
-                </svg>
-                <span>تم روشن</span>
-
-            </div>
-
-            <a href="#" class="flex items-center gap-x-2">
+            <a href="#" class="inline-flex items-center gap-x-2">
                 <svg class="w-5 h-5">
                     <use xlink:href="#shopping-cart"></use>
                 </svg>
