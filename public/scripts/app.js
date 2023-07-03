@@ -20,13 +20,16 @@ toggleThemeBtns.forEach(btn=>{
 
 submenuOpenBtn.addEventListener('click',(e)=>{
     e.currentTarget.parentElement.classList.toggle('text-orange-300')
-    submenu.classList.toggle('submenu-open')
+    let sub=submenu.classList.toggle('submenu-open')
+    const subs = (!sub) ? submenuOpenBtn.classList.remove('rotate-180') : submenuOpenBtn.classList.add('rotate-180') 
+    subs;
 })
 
 navIcon.addEventListener('click', ()=>{
     nav.classList.remove('-right-64')
     nav.classList.add('right-0')
     overlay.classList.add('overlay--visibel')
+    
 })
 
 navCloseBtn.addEventListener('click', ()=>{
