@@ -252,16 +252,20 @@
 </header>
 
 <!-- mobile-header -->
+
 <div class="flex md:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700">
 
     <!-- menue-icon -->
+
     <div class="nav-icon">
         <svg class="w-6 h-6 text-zinc-700 dark:text-white">
 
             <use href="#bars-3"></use>
         </svg>
     </div>
+
     <!-- nav -->
+
     <div class="nav fixed top-0 -right-64 bottom-0 min-h-screen pt-3 px-4 w-64 bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all">
         <!-- nav-heder -->
         <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
@@ -390,23 +394,59 @@
     </div>  
 
     <!-- logo -->
+
     <div>
         <svg class="w-[100px] h-10 text-orange-300">
 
             <use href="#logo-type"></use>
         </svg>
     </div>
+
     <!-- shop-icon -->
+
     <div>
         <svg class="w-6 h-6 text-zinc-700 dark:text-white">
 
             <use href="#shopping-cart"></use>
         </svg>
     </div>
+
+     <!-- cart -->
+
+     <div class="fixed top-0 left-0 bottom-0 min-h-screen pt-5 px-4 w-64 bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all">
+
+        <!-- cart-heder -->
+
+        <div class="flex items-center justify-between pb-5 mb-5 border-b border-b-gray-300 dark:border-b-white/10">
+
+            <div class="cart-closebtn">
+                <svg class="w-5 h-5 text-zinc-600 dark:text-white">
+                    <use href="#x-mark"></use>
+                </svg>
+            </div>
+            <span class="font-danaMedium text-zinc-700 dark:text-white">سبد خرید</span>
+        </div>
+
+        <!-- cart-body -->
+
+
+
+        <!-- cart-footer -->
+
+        <div class="flex items-center gap-x-4">
+            <a href="#" class="flex items-center text-white bg-teal-600 dark:bg-emerald-500 h-11 w-28 justify-center rounded-xl">ثبت سفارش</a>
+            <div>
+                <span class="font-danaMedium text-sm text-gray-300 tracking-tighter">مبلغ قابل پرداخت</span>
+                <div class="text-zinc-700 dark:text-white font-danaDemiBold">
+                    350,000
+                    <span class="text-xs">تومان</span>
+                </div>
+
+        </div>  
     
 </div>
 
-<div class="overlay"></div>
+<div class="overlay overlay--visibel -z-10"></div>
 <script src="./scripts/app.js"></script>    
 </body>
 </html>
