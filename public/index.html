@@ -266,7 +266,7 @@
 
     <!-- nav -->
 
-    <div class="nav fixed top-0 -right-64 bottom-0 min-h-screen pt-3 px-4 w-64 bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all">
+    <div class="nav fixed top-0 -right-64 bottom-0 min-h-screen pt-3 px-4 w-64 bg-white dark:bg-zinc-700 z-30 overflow-y-auto transition-all">
         <!-- nav-heder -->
         <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
             <div class="flex gap-x-3.5">
@@ -404,7 +404,7 @@
 
     <!-- shop-icon -->
 
-    <div>
+    <div class="cart-icon">
         <svg class="w-6 h-6 text-zinc-700 dark:text-white">
 
             <use href="#shopping-cart"></use>
@@ -413,7 +413,7 @@
 
      <!-- cart -->
 
-     <div class="fixed top-0 left-0 bottom-0 min-h-screen pt-5 px-4 w-64 bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all">
+     <div class="cart fixed top-0 -left-64 bottom-0 flex flex-col min-h-screen pt-5 px-4 w-64 bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all">
 
         <!-- cart-heder -->
 
@@ -429,11 +429,47 @@
 
         <!-- cart-body -->
 
+        <div class="child:pb-5 child:mb-5">
+            <!-- product 1 -->
+            <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                <img src="./img/products/p1.png" class="w-[90px] h-[90px]" alt="product 1">
+
+                <div class="flex flex-col justify-between GAP-Y-1.5">
+                    <h4 class="font-danaMedium text-zinc-700 dark:text-white text-sm line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                    <div>
+                        <span class="font-danaMedium text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">14.500 تومان تخفیف</span>
+                        <div class="text-zinc-700 dark:text-white font-danaDemiBold">
+                            175,000
+                            <span class="text-xs">تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product 2 -->
+            <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                <img src="./img/products/p2.png" class="w-[90px] h-[90px]" alt="product 1">
+
+                <div class="flex flex-col justify-between GAP-Y-1.5">
+                    <h4 class="font-danaMedium text-zinc-700 dark:text-white text-sm line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                    <div>
+                        <span class="font-danaMedium text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">14.500 تومان تخفیف</span>
+                        <div class="text-zinc-700 dark:text-white font-danaDemiBold">
+                            175,000
+                            <span class="text-xs">تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
 
 
         <!-- cart-footer -->
 
-        <div class="flex items-center gap-x-4">
+        <div class="flex items-end gap-x-4 mt-auto mb-8">
+
+
             <a href="#" class="flex items-center text-white bg-teal-600 dark:bg-emerald-500 h-11 w-28 justify-center rounded-xl">ثبت سفارش</a>
             <div>
                 <span class="font-danaMedium text-sm text-gray-300 tracking-tighter">مبلغ قابل پرداخت</span>
@@ -444,9 +480,11 @@
 
         </div>  
     
+
+
 </div>
 
-<div class="overlay overlay--visibel -z-10"></div>
+<div class="overlay -z-10"></div>
 <script src="./scripts/app.js"></script>    
 </body>
 </html>
