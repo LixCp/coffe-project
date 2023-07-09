@@ -27,12 +27,10 @@
         font-family: "Morabba Bold";
         src: url(../fonts/Morabba/woff2/Morabba-Bold.woff2)format("woff2");
     }
-    body{
-        background: url('../img/headerBgDesktop.webp');
-        background-repeat: no-repeat;
-    }
+
 
 }
+
 @layer components{
     .submenu{
         @apply  hidden flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
@@ -45,5 +43,23 @@
     }
     .overlay--visibel{
         @apply visible opacity-100;
+    }
+
+
+    .circle{
+        @apply md:flex items-center justify-center rounded-full border hidden;
+    }
+    .circle--parent{
+        @apply absolute bottom-0 right-0 left-0 mx-auto translate-y-2/4;
+
+    }
+    .circle--lg{
+        @apply w-[203px] h-[203px] border-white/25;
+    }
+    .circle--md{
+        @apply w-[145px] h-[145px] border-white/80;
+    }
+    .circle--sm{
+        @apply w-[95px] h-[95px] border-white/50;
     }
 }
