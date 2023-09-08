@@ -27,6 +27,9 @@
         font-family: "Morabba Bold";
         src: url(../fonts/Morabba/woff2/Morabba-Bold.woff2)format("woff2");
     }
+    img{
+        user-select: none;
+    }
 
 
 }
@@ -70,7 +73,6 @@
             background:linear-gradient(rgba(243,244,246,0.65),rgba(243,244,246,0.65)) ,url('../img/products-bg.png');
             background-size: 100%;
             background-repeat: no-repeat;
-            height: 900px;
         }
         
     }
@@ -82,5 +84,37 @@
     }
     .section-link{
         @apply flex items-center tracking-tightset text-base md:text-xl text-orange-300 gap-x-0.5 md:gap-x-1 h-10 pr-3 pl-1 transition-colors md:hover:bg-orange-300/20 rounded-md;
+    }
+
+    .offer{
+        @apply text-gray-400 relative
+    }
+    .offer::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        inset: 0;
+        margin: auto;
+        background: #EF4444;
+        top: -5px;
+    }
+    .category--banner__item1{
+        background: linear-gradient(270deg,rgba(0,0,0,0.65)33.85%,rgba(0,0,0,0.10)100%), url('../img/categories/category-right.jpg');
+        background-size: cover;
+    }
+    .category--banner__item2{
+        background: linear-gradient(270deg,rgba(0,0,0,0.65)33.85%,rgba(0,0,0,0.10)100%), url('../img/categories/category-left.jpg');
+        background-size: cover;
+    }
+    .swiper-button-prev--custom,
+    .swiper-button-next--custom{
+        @apply flex-center w-9 h-9 md:w-10 md:h-10 bg-white dark:text-white text-zinc-700 dark:bg-zinc-700 hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 transition-all rounded-full ;
+    }
+}
+
+@layer utilities{
+    .flex-center{
+        @apply flex items-center justify-center
     }
 }
